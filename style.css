@@ -1,0 +1,301 @@
+            body {
+                font-family: "Noto Sans", sans-serif;
+                font-size: 1em;
+            }
+            /*HEADER*/
+            
+            .main {
+                width: 100%;
+                background-color: #fcfcfc;
+            }
+            
+            .logo {
+                vertical-align: top;
+                align-items: left;
+                padding-left: 25px;
+                max-height: 55px;
+            }
+            
+            #heroGrid {
+                margin: 0 5%;
+                display: grid;
+                min-height: 500px;
+                height: 60vh;
+                grid-template-rows: 75% 25%;
+                grid-template-areas: "h1-main head-img";
+                color: #828282;
+                background-color: #fdfdfd;
+            }
+            
+            .h1-main {
+                vertical-align: middle;
+                font-family: Quicksand, sans-serif;
+                font-size: 3.5em;
+                font-weight: 400;
+                padding-top: 150px;
+                padding-left: 140px;
+            }
+            
+            .head-img {
+                vertical-align: middle;
+                width: 650px;
+                padding-top: 40px;
+            }
+            
+            .button-main {
+                width: 180px;
+                height: 42px;
+                font-family: Noto Sans, sans-serif;
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: 400;
+                text-align: center;
+                border-radius: 8px;
+                background-color: rgb(97, 143, 155);
+                color: #fff;
+                margin-left: 140px;
+            }
+            /*NAVIGATION*/
+            
+            .nav {
+                vertical-align: top;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #f2f2f2;
+            }
+            
+            ol,
+            ul {
+                margin: 0;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                padding-right: 100px;
+                list-style-type: none;
+            }
+            
+            .nav li a {
+                display: flex;
+                justify-content: space-between;
+                list-style-type: none;
+            }
+            
+            .nav ul li {
+                display: flex;
+                justify-content: space-between;
+                list-style-type: none;
+                font-family: Quicksand, sans-serif;
+                font-weight: 700;
+            }
+            
+            .nav ul li a {
+                color: #828282;
+                display: flex;
+                justify-content: space-between;
+                line-height: 3em;
+                padding: 1em 2em;
+                text-decoration: none;
+            }
+            /*ABOUT*/
+            
+            #about {
+                width: 100%;
+                background-color: #f2f2f2;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                min-height: 500px;
+            }
+            
+            .row {
+                display: flex;
+                margin: 0 5%;
+                flex-direction: row;
+            }
+            
+            .column {
+                display: flex;
+                margin: 0 5%;
+                flex-direction: column;
+                width: 70%;
+            }
+            
+            .about-img,
+            .h2-about,
+            .about-text {
+                display: flex;
+                margin-bottom: 20px;
+                color: #828282;
+            }
+            
+            .about-img {
+                -webkit-flex: 1;
+                -ms-flex: 1;
+                flex: 1;
+                width: 325px;
+                height: 350px;
+                padding-top: 50px;
+            }
+            
+            .h2-about {
+                font-family: Quicksand, sans serif;
+                font-size: 42px;
+                font-weight: 400;
+                line-height: 46px;
+            }
+            
+            .about-text {
+                -webkit-flex: 2;
+                -ms-flex: 2;
+                flex: 2;
+                font-family: "Noto Sans", sans-serif;
+                font-size: 22px;
+                font-weight: 400;
+                line-height: 32px;
+                padding: 10px 0;
+            }
+            /*WORK*/
+            
+            .subHeading {
+                text-align: center;
+                padding-bottom: 10px;
+                border-bottom: 2px solid #FC6363;
+                font-family: Quicksand, sans-serif;
+                color: #828282;
+                font-size: 3em;
+                font-weight: 400;
+                width: 300px;
+                margin: 50px auto;
+            }
+            
+            .heading {
+                background-color: #FC6363;
+                padding: 15px;
+                height: 25px;
+                color: white;
+                font-size: 18px;
+            }
+            
+            #workGrid {
+                margin: 0 5%;
+                display: grid;
+                grid-template-rows: 33% 33% 33%;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-areas: "msb govt buzzle""msb govt buzzle";
+                height: 500px;
+                padding-top: 6%;
+                padding-bottom: 10%;
+            }
+            
+            .workGridArea {
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin: 5px;
+                cursor: pointer;
+                display: grid;
+                align-content: end;
+            }
+            
+            #msb {
+                grid-area: msb;
+                background-image: url("../img/msb-hero.png");
+                height: 400px;
+            }
+            
+            #epa-redesign {
+                grid-area: govt;
+                background-image: url("../img/govt.png");
+                height: 400px;
+            }
+            
+            #app-1 {
+                grid-area: buzzle;
+                background-image: url("../img/buzzle.png");
+                height: 400px;
+            }
+            /*SKILLS*/
+            
+            .flexContainer {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-content: center;
+                margin: 0 5%;
+                width: 100%;
+            }
+            
+            .flex-1 {
+                -webkit-flex: 1;
+                -ms-flex: 1;
+                flex: 1;
+                width: 33%;
+                border: 1px solid red;
+            }
+            
+            .flex-2 {
+                -webkit-flex: 2;
+                -ms-flex: 2;
+                flex: 2;
+                width: 33%;
+                border: 1px solid red;
+            }
+            
+            .flex-3 {
+                -webkit-flex: 3;
+                -ms-flex: 3;
+                flex: 3;
+                width: 33%;
+                border: 1px solid red;
+            }
+            
+            #skills {
+                margin: auto;
+                width: 100%;
+                height: 500px;
+                background-color: #FCFCFC;
+                color: #828282;
+            }
+            /*CONTACT*/
+            
+            #contact {
+                width: 100%;
+                background-image: url("../img/coffee.png");
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 500px;
+            }
+            
+            .contact-text {
+                width: 50%;
+                margin: 0 auto;
+                color: #828282;
+            }
+            /*FOOTER*/
+            
+            #footer-area {
+                width: 100%;
+                background-color: #FC6363;
+                color: #fff;
+                height: 300px;
+            }
+            
+            .footer menu {
+                width: 50%;
+                display: flex;
+                align-items: center;
+            }
+            
+            .footer li {
+                width: 50%;
+                justify-content: space-evenly;
+            }
+            /*MEDIA QUERIES*/
+            
+            @media only screen and (max-width: 600px) {
+                body {
+                    background-color: lightblue;
+                }
+            }
