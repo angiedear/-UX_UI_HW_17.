@@ -3,7 +3,7 @@
 
 <head>
     <title>Angie Robinson</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet" />
 </head>
 <!--Header and Navigation -->
@@ -11,7 +11,7 @@
 <body>
     <header class="main">
         <div class="nav">
-            <img class="logo" src="img/logo-2.png" alt="image of logo" />
+            <img class="logo" src="img/logo.png" alt="image of logo" />
             <nav class="inline-block">
                 <ul>
                     <li><a href="#">ABOUT</a></li>
@@ -24,14 +24,13 @@
     </header>
     <div id="heroGrid">
         <h1 class="h1-main"> Hi there, I'm Angie, <br>I'm an Artist and UX/UI Designer</h1>
-        <img class="head-img" src="img/laptop-2.png" />
+        <img class="head-img" src="img/laptop-5.png" />
         <button class="button-main">Download Resume</button>
     </div>
-
     <!-- About Me -->
     <section id="about">
         <div class="row">
-            <div class="row"><img class="about-img" src="img/me-coral.png " alt="image of angie robinson" />
+            <div class="row"><img class="about-img" src="img/girl-2.jpg " alt="image of angie robinson" />
             </div>
             <div class="column">
                 <h2 class="h2-about">About Me..</h2>
@@ -43,63 +42,92 @@
             </div>
         </div>
     </section>
-
     <!-- My Work -->
     <div class="subHeading" <h3>My Work</h3>
     </div>
     <section id="workGrid">
-        <div id="msb" class="workGridArea">
-            <div class="heading">Non Profit Redesign</div>
-        </div>
-        <div id="epa-redesign" class="workGridArea">
-            <div id="govt" class="workGridArea">
-                <div class="heading">EPA Redesign</div>
+        <div class="heading">Non Profit Redesign
+            <div class="intro-text">Turning disadvantaged foster kids into superheroes.
+                <p class="work-content">Redesigning an existing NPO and giving it a new and happy feeling so that the user feels excited to give and businesses have an easier way of booking team events.</p>
+                <button class="read-button">Read About..</button>
             </div>
         </div>
-        <div id="app-1" class="workGridArea">
-            <div id="buzzle" class="workGridArea">
-                <div class="heading">Mobile App Design</div>
+        <div id="msb" class="workGridArea"></div>
+        <div class="heading">EPA Redesign
+            <div class="intro-text">Giving the EPA a fresh look and a organized navigation.
+                <p class="work-content">The EPA is a very important organization and their site holds a great deal of exclusive information, how did we make the material easier to find?</p>
+                <button class="read-button">Read About..</button>
             </div>
         </div>
+        <div id="epa-redesign" class="workGridArea"></div>
+
+        <div class="heading">Mobile App Design
+            <div class="intro-text">Creating a medication app designed to save lives.
+                <p class="work-content">Developing an app with a family friendly focus that allows caregivers to manage medications with each other and gently remind patients to adhere to guidelines.</p>
+                <button class="read-button">Read About..</button>
+            </div>
+        </div>
+        <div id="app-1" class="workGridArea"></div>
     </section>
-
     <!--  My UX Skills section coded using CSS flex -->
-
     <section id="skills">
         <h1 class="subHeading ">My UX Skills</h1>
-        <div class="flexContainer flex-1">
-            <img src="img/search-128.png" />
-            <h3 class=" ">USER RESEARCH</h3>
-            <p class=" ">I approach User Research in a comprehensive way. When I am faced with a new issue I want to know everything I can about it and how it is being addressed.</p>
-        </div>
-        <div class="flexContainer flex-2">
-            <img src="img/ideation-128.png " />
-            <h3 class=" ">USER EMPATHY</h3>
-            <p class=" ">User empathy is the space where I feel the most comfortable. Once I know who the user is, it is very easy for me to imagine the circumstances they find themselves in. </p>
-        </div>
-        <div class="flexContainer flex-3">
-            <img src="img/communication-128.png " />
-            <h3 class=" ">QUALITATIVE INTERVIEWS</h3>
-            <p class=" ">I enjoy qualitative interviews and I am always surprised by the new things that I learn when I interview people. It expands my world view and reminds me not to make assumptions.
-            </p>
+        <div class="flexContainer">
+            <div class="box-1">
+                <img src="img/search-128.png" />
+                <h3 class="h3-skills">USER RESEARCH</h3>
+                <p class="skills-text">I approach User Research in a comprehensive way. When I am faced with a new issue I want to know everything I can about it and how it is being addressed.</p>
+            </div>
+            <div class="box-2 ">
+                <img src="img/ideation-128.png " />
+                <h3 class="h3-skills">USER EMPATHY</h3>
+                <p class="skills-text">User empathy is the space where I feel the most comfortable. Once I know who the user is, it is very easy for me to imagine the circumstances they find themselves in. </p>
+            </div>
+            <div class="box-3 ">
+                <img src="img/communication-128.png " />
+                <h3 class="h3-skills">QUALITATIVE INTERVIEWS</h3>
+                <p class="skills-text">I enjoy qualitative interviews and I am always surprised by the new things that I learn when I interview people. It expands my world view and reminds me not to make assumptions.
+                </p>
+            </div>
         </div>
     </section>
     <!--Contact -->
-    <section id="contact">
-        <div class="contact-text ">
-            <h1>Like what you see? Let's talk!</h1>
+    <div class="container">
+        <div style="text-align:center">
+            <h1 class="subHeading">Contact</h1>
+            <p class="heading">Like what you see? Send me a message and let's talk.</p>
         </div>
-    </section>
+        <div class="row">
+            <div class="column">
+                <img src="img/hi-kitty-2.png" style="width:100%">
+            </div>
+            <div class="column">
+                <form action="/action_page.php">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                <option value="australia">United States</option>
+                <option value="canada">Canada</option>
+                <option value="usa">Australia</option>
+              </select>
+                    <label for="subject">Message</label>
+                    <textarea id="message" name="message" placeholder="Write something.." style="height:170px"></textarea>
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+        </div>
+    </div>
     <!--footer -->
-    <section id="footer-area">
-        <footer>
-            <ul class="footer-menu ">
-                <li>ABOUT</li>
-                <li>WORK</li>
-                <li>SKILLS</li>
-                <li>CONTACT</li>
-            </ul>
-        </footer>
+    <section id="footer-area ">
+        <ul class="footer-menu ">
+            <li>ABOUT</li>
+            <li>WORK</li>
+            <li>SKILLS</li>
+            <li>CONTACT</li>
+        </ul>
     </section>
 </body>
 
